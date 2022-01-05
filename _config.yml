@@ -1,0 +1,16 @@
+theme: jekyll-theme-slate
+show_downloads: false
+title: "StoneMountainHamfest"
+formspree_id: mwkawjlv
+defaults:
+  # _posts
+  - scope:
+      path: ""
+    values:
+      layout: default
+gems:
+- jekyll-github-metadata
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jemoji

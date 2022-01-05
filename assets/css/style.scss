@@ -1,0 +1,185 @@
+---
+---
+
+@import "jekyll-theme-slate";
+body {
+  margin: auto;
+  max-width: 1260px;
+  min-width: 360px;
+}
+
+main {
+  background: linear-gradient( black, rgba(0, 0, 0, 50%) ), url("../images/background-fs8.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+}
+
+div#header_wrap.outer {
+  background: white;
+  background-image: url(../images/logo-1024.png),url(../images/arrl-state-conv.png);
+  background-size: 190px, 228px;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  max-width: 95%;
+  margin-left: 2.5%;
+  opacity: 95%;
+}
+
+.outer {
+  height: 220px;
+}
+
+.inner {
+  max-width: inherit;
+}
+
+a.outer {
+  height: auto;
+  border-bottom: #e9b80b7d;
+  border-right: #e9b80b7d;
+  border-left: #e9b80b7d;
+  border-style: solid;
+  border-radius: inherit;
+  border-width: medium;
+}
+
+#nav_content {
+  padding-top: 5px;
+  text-align: center;
+  width: 97%;
+  margin-left: 1.5%;
+}
+
+#countdown_content {
+  padding-top: 5px;
+  text-align: center;
+  -webkit-text-stroke-width: thin;
+}
+
+div#countdown_content_wrap {
+  text-anchor: middle;
+  font-family: Verdana,Geneva,DejaVu Sans,sans-serif;
+  text-rendering: geometricPrecision;
+  font-size: 0px;
+}
+
+#main_content_wrap {
+  background: #ffffffed;
+  border-radius: 10px;
+  border: #e9b80b7d;
+  border-style: solid;
+  border-width: medium;
+  max-width: 95%;
+  margin-left: 2.5%;
+}
+
+.countdown {
+  background-color: #ca1e32cc;
+  border: #e9b80b7d;
+  border-style: solid;
+  border-radius: 10px;
+  height: 60px;
+  width: 328px;
+  color: white;
+  //padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ca1e32cc;
+  border: #e9b80b7d;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+img {
+  border: unset;
+  max-width: unset;
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+}
+
+div#footer_wrap.outer {
+  border-radius: 10px 10px 0px 0px;
+  border-left: #e9b80b7d;
+  border-top: #e9b80b7d;
+  border-right: #e9b80b7d;
+  border-style: solid;
+  border-width: medium;
+  max-width: 95%;
+  margin-left: 2.5%;
+}
+
+@media screen and (max-width: 360px) {
+  .countdown {
+    width: 95%;
+  }
+}
+
+.fleamarket-layout {
+  max-width: 800px;
+  margin: auto;
+}
+
+.exhibition-map {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer {
+  height: 146px;
+  text-align: center;
+}
+
+form {
+  background: unset;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #ca1e32cc;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #e9b80b7d;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #ca1e32cc;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 10px;
+  padding: 20px;
+}

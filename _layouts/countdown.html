@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+{% seo %}
+  </head>
+
+  <body>
+    <main>
+    <nav>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+	    <a title="Stone Mountain Hamfest" class="outer" href="{{ '/' | relative_url }}"></a>
+        <header>
+        </header>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div id="nav_content_wrap" class="outer-nav">
+      <section id="nav_content" class="inner-nav">
+	<a href="info"><img alt="info" src="assets/svg/info-button.svg" width="100px" height="20px"></a>
+	<a href="tickets"><img alt="tickets" src="assets/svg/tickets-button.svg" width="100px" height="20px"></a>
+	<a href="prizes"><img alt="prizes" src="assets/svg/prizes-button.svg" width="100px" height="20px"></a>
+	<a href="workshops"><img alt="workshops" src="assets/svg/workshops-button.svg" width="100px" height="20px"></a>
+	<a href="testing"><img alt="testing" src="assets/svg/testing-button.svg" width="100px" height="20px"></a>
+	<a href="forums"><img alt="forums" src="assets/svg/forums-button.svg" width="100px" height="20px"></a>
+	<a href="clubs"><img alt="clubs" src="assets/svg/clubs-button.svg" width="100px" height="20px"></a>
+	<a href="vendors"><img alt="vendors" src="assets/svg/vendors-button.svg" width="100px" height="20px"></a>
+	<a href="fleamarket"><img alt="market" src="assets/svg/market-button.svg" width="100px" height="20px"></a>
+	<a href="tailgating"><img alt="tailgating" src="assets/svg/tailgating-button.svg" width="100px" height="20px"></a>
+        <a href="contests"><img alt="contests" src="assets/svg/contests-button.svg" width="100px" height="20px"></a>
+	<a href="contact"><img alt="contact" src="assets/svg/contact-button.svg" width="100px" height="20px"></a>
+      </section>
+    </div>
+    <div id="countdown_content_wrap" class="outer-countdown">
+      <section id="countdown_content" class="inner-countdown">
+	<button class="countdown" id="countdown">Welcome to the 2021 Stone Mountain HamFest!</button>
+      </section>
+    </div>
+    </nav>
+    <br>
+    <div id="main_content_wrap" class"outer">
+      <section id="main_content" class="inner">
+        {{ content }}
+      </section>
+    </div>
+    <br>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer footer">
+      <footer class="inner">
+	<script src="assets/js/countdown.js" defer></script>
+	<a href="https://www.facebook.com/groups/645512959126835/" title="SMHF@Facebook" target="_blank" rel="noopener"><img class="footer-image" alt="FACEBOOK" src="assets/svg/facebook-icon.svg" width="30"></a>  
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+      </footer>
+    </div>
+  </body>
+  </main>
+</html>
